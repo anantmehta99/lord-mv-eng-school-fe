@@ -1,0 +1,118 @@
+.about-us-container {
+  margin: 0rem 2rem;
+  .yellow-underline::after {
+    content: "";
+    // position: absolute;
+    // bottom: -0.2rem;
+    // left: -0.5rem;
+    // right: -0.5rem;
+    // top: 12rem;
+    // height: 0.75rem;
+    // z-index: 100;
+    // background-image: url(https://cepheiinfotech.com/static/media/Underline-1-Yellow-fire.3ba3731….svg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+  }
+  .school-profile-container,
+  .vision-container,
+  .mission-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: left;
+    .font-satisfy {
+      font-family: "Satisfy", cursive;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 2rem;
+    }
+    .font-doodle-shadow {
+      font-family: "Rubik Doodle Shadow", system-ui;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 3rem;
+    }
+    .school-profile-content {
+      line-height: 1.75rem;
+      letter-spacing: 0.05rem;
+    }
+  }
+  .school-profile-container {
+    margin-top: 6rem;
+  }
+  .vision-container,
+  .mission-container {
+    margin-top: 2rem;
+    .font-satisfy {
+      font-size: 3rem;
+    }
+  }
+  .vision-container {
+    align-items: flex-end;
+    text-align: right;
+  }
+  .our-inspiration-parent-container {
+    margin-top: 3rem;
+    .our-inspiration-text-container {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      font-family: "Amita", serif;
+    }
+    .our-inspiration-image-container img {
+      border-radius: 50%;
+    }
+    .our-inspiration-name-container {
+      font-size: 1.5rem;
+      margin-top: 0.5rem;
+      font-weight: 500;
+      letter-spacing: 0.025rem;
+    }
+  }
+  .faculty-details-parent-container {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .faculty-details-header-container {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+      font-family: "Amita", serif;
+    }
+    .faculty-details-table-container {
+      width: 65%;
+      box-sizing: border-box;
+      .faculty-details-item-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1rem;
+        padding: 0rem 2rem;
+        width: 100%;
+        background-color: #ffffff;
+        border-radius: 10px;
+        box-shadow: rgba(30, 30, 30, 0.1) 0px 3px 6px 0px;
+        .faculty-details-title {
+          width: 50%;
+          font-weight: 500;
+          letter-spacing: 0.5px;
+          display: flex;
+          align-items: flex-end;
+          justify-content: flex-end;
+          padding-right: 2rem;
+        }
+        .faculty-details-name-container {
+          width: 50%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          justify-content: center;
+          li {
+            margin: 0.5rem 0;
+          }
+        }
+      }
+    }
+  }
+}
