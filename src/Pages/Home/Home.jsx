@@ -1,4 +1,4 @@
-// import HomeCarousel from "../../components/carousel/carousel";
+import HomeCarousel from "../../components/carousel/carousel";
 // import PrincipalImage from "../../assets/Home/PrincipalImage.jpg";
 // import ChairmanImage from "../../assets/Home/chairman.jpg";
 // import TrusteeImage from "../../assets/Home/Trustee.jpg";
@@ -12,7 +12,9 @@ const Home = () => {
   return (
     <div className="home-page-container">
       <div className="home-page-body-container">
-        <div className="home-carousel-container">{/* <HomeCarousel /> */}</div>
+        <div className="home-carousel-container">
+          <HomeCarousel />
+        </div>
         {/* <div className="messages-parent-container">
           <div className="message-container">
             <h3>Principal&apos;s Message</h3>
