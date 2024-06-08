@@ -1,6 +1,6 @@
 import HomeCarousel from "../../components/carousel/carousel";
-import PrincipalImage from "../../assets/Home/PrincipalImage.jpg";
-import ChairmanImage from "../../assets/Home/chairman.jpg";
+// import PrincipalImage from "../../assets/Home/PrincipalImage.jpg";
+// import ChairmanImage from "../../assets/Home/chairman.jpg";
 // import TrusteeImage from "../../assets/Home/Trustee.jpg";
 import "./Home.scss";
 import SchoolToppers from "../../components/carousel/SchoolToppers";
