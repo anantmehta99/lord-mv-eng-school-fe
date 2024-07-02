@@ -129,7 +129,7 @@ const Header = () => {
             }
             onClick={() => setActiveNavLink("academics")}
           >
-            <a href="/">Academics</a>
+            <a href="/academics">Academics</a>
           </div>
           <div
             className={
