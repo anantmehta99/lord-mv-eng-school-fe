@@ -7,13 +7,13 @@ const Academics = () => {
   const transferCertificates = [
     {
       path: "/assets/Documents/TC/TC695.pdf",
-      fileName: "TC695.pdf",
-      title: "TC695.pdf",
+      fileName: "695.pdf",
+      title: "695.pdf",
     },
     {
       path: "/assets/Documents/TC/PujitKothari.pdf",
-      fileName: "PujitKothari.pdf",
-      title: "PujitKothari.pdf",
+      fileName: "945.pdf",
+      title: "945.pdf",
     },
   ];
 
