@@ -8,17 +8,12 @@ const Academics = () => {
     {
       path: "/assets/Documents/TC/TC695.pdf",
       fileName: "TC695.pdf",
-      title: "695.pdf",
+      title: "TC695.pdf",
     },
     {
-      path: "/assets/Documents/TC/TC695.pdf",
-      fileName: "TC695.pdf",
-      title: "695.pdf",
-    },
-    {
-      path: "/assets/Documents/TC/RateQuotation.pdf",
-      fileName: "RateQuotation.pdf",
-      title: "RateQuotation.pdf",
+      path: "/assets/Documents/TC/PujitKothari.pdf",
+      fileName: "PujitKothari.pdf",
+      title: "PujitKothari.pdf",
     },
   ];
 
