@@ -1,13 +1,41 @@
 import "./Academics.scss";
 import download from "../../assets/Icons/download-arrow-icon.svg";
+import { useState } from "react";
+import { useEffect } from "react";
 const Academics = () => {
+  const [query, setQuery] = useState("");
   const transferCertificates = [
     {
-      path: "../../assets/Documents/TC/TC695.pdf",
-      fileName: "695.pdf",
-      title: "695",
+      path: "/assets/Documents/TC/TC695.pdf",
+      fileName: "TC695.pdf",
+      title: "695.pdf",
+    },
+    {
+      path: "/assets/Documents/TC/TC695.pdf",
+      fileName: "TC695.pdf",
+      title: "695.pdf",
+    },
+    {
+      path: "/assets/Documents/TC/RateQuotation.pdf",
+      fileName: "RateQuotation.pdf",
+      title: "RateQuotation.pdf",
     },
   ];
+
+  const handleDownload = () => {
+    const file = transferCertificates.find((doc) => doc.title === query);
+    if (file) {
+      const link = document.createElement("a");
+      link.href = file.path;
+      link.setAttribute("download", file.fileName);
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } else {
+      alert("File not found!");
+    }
+  };
+
   return (
     <div className="academics-container">
       <div className="transfer-certificate-parent-container">
@@ -15,14 +43,20 @@ const Academics = () => {
           <h2>Transfer Certificate</h2>
         </div>
         <div className="faculty-details-table-container">
-          {transferCertificates.map((item, index) => (
-            <div className="tc-container">
-              <a href={item.path} download={item.fileName}>
-                {item.title}
-                <img src={download} width={25}></img>
-              </a>
-            </div>
-          ))}
+          <input
+            type="text"
+            placeholder="Search..."
+            value={query}
+            onChange={(e) => setQuery(e.target.value)}
+            style={{
+              width: "100%",
+              padding: "8px",
+              borderRadius: "5px",
+              border: "1px solid #ccc",
+              marginRight: "20px",
+            }}
+          />
+          <button onClick={handleDownload}>Go</button>
         </div>
       </div>
     </div>
